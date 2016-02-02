@@ -16,7 +16,7 @@ public class Player {
     }
 
     public Player() {
-        firstName = "Test";
+        firstName = "Teser";
         surName = "Testson";
         number = 99;
     }
