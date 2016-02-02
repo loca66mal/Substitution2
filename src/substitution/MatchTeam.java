@@ -47,9 +47,27 @@ public class MatchTeam {
             if (presentPlayer==player){
             it.remove();      
         }
+        
         }       
         
         //else throw exception?
+    }
+    
+    public String getPlayerSurName(int playerNo)
+    {
+        return theTeam.get(playerNo).getSurName();        
+    
+    }
+    
+    public String listPlayerSurNames()
+    {
+        String out = "";
+        
+        for (Player aPlayer : theTeam){
+            out = out + aPlayer.getSurName()+"\n";
+        }
+        
+        return out;
     }
     
     //skräpmetod
